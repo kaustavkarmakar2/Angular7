@@ -1,0 +1,23 @@
+<div>
+    <h1>HEllo</h1>
+    <h2 class="text-center">Add Students</h2>
+    <form [formGroup]="addForm" novalidate class="form">
+        <div class="form-group">
+            <label for="sId">Students Id:</label>
+            <input type="number" formControlName="sId" placeholder="Students Id " name="sId" class="form-control" id="sId">
+        </div>
+        <div class="form-group">
+            <label for="fName">Students First Name:</label>
+            <input type="text" formControlName="fName" placeholder="Students Name" name="sName" class="form-control" id="fName">
+        </div>
+        <div class="form-group">
+            <label for="lName">Students Last Name:</label>
+            <input type="text" formControlName="lName" placeholder="Students Name" name="sName" class="form-control" id="lName">
+        </div>
+        <div class="form-group">
+            <label for="email">Students Email:</label>
+            <input type="email" formControlName="email" placeholder="Students Email" name="email" class="form-control" id="email">
+        </div>
+        <button class="btn btn-success"   (click)="onSubmit()">Submit</button>
+    </form>
+</div>
